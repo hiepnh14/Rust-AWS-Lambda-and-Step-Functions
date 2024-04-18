@@ -51,3 +51,9 @@ For example: `This is **a** test.`, will be processed to `this is a test`.
 1. remove_special: gets input text and removes all special characters. It returns the output text without special characters. The output is represented in JSON format.
 2. standardize_case: gets input text and lowers the case. It returns the output text in lowercase. The result is represented in JSON format.
 
+## Screenshot:
+
+Lambda functions:
+![](images/lambdaAll.png)
+Step Function Execution:
+![](images/test_step.png)
