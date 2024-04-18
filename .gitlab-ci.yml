@@ -1,6 +1,6 @@
 stages:
-  - remove_special
-  - standardize_case
+  - remove_special_stage
+  - standardize_case_stage
 variables:
   AWS_DEFAULT_REGION: us-east-1
   AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
@@ -23,8 +23,8 @@ remove_special_stage:
   only:
     - main
 
-standardize_casestage:
-  stage: standardize_case
+standardize_case_stage:
+  stage: standardize_case_stage
   image: rust:latest
   script:
     - rustup default stable
