@@ -10,8 +10,7 @@ deploy:
     - export AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION
     - cd remove_special
     - cargo lambda build --release
-    - cargo lambda deploy --region us-east-1 --iam-role arn:aws:iam::471112833307:role/IDS721
     - cd ../standardize_case
     - cargo lambda build --release
-    - cargo lambda deploy --region us-east-1 --iam-role arn:aws:iam::471112833307:role/IDS721
+    
 
